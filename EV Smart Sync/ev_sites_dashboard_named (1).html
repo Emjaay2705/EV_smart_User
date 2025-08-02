@@ -1,0 +1,1500 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Eastern Cape EV Charging Site Analysis (Named)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    <h1 class="mt-4 mb-4 text-center">Eastern Cape EV Charging Site Analysis</h1>
+    <h4>Interactive Map</h4>
+    <!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3f274b564d62e1223e928379bb63b379 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3f274b564d62e1223e928379bb63b379" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3f274b564d62e1223e928379bb63b379 = L.map(
+                "map_3f274b564d62e1223e928379bb63b379",
+                {
+                    center: [-31.474058083454757, 26.538759687210405],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a3f66cdcd74b425924c726f50faef655 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+            var circle_marker_a158e2e7974afd0f781d7f1179d3f1c7 = L.circleMarker(
+                [-31.51920872515448, 26.77970815199864],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_c2128e36c51c7795bea7526c87e881ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b7a1105ba99885c758ead35bfc5480e = $(`<div id="html_2b7a1105ba99885c758ead35bfc5480e" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Inkwanca Ward 3<br><b>Latitude:</b> -31.519209<br><b>Longitude:</b> 26.779708<br><b>Suitability:</b> 91.6<br><b>Solar GHI:</b> 2187.6<br><b>Dist to Road:</b> 19.46 km<br><b>Dist to Town:</b> 42.72 km</div>`)[0];
+            popup_c2128e36c51c7795bea7526c87e881ca.setContent(html_2b7a1105ba99885c758ead35bfc5480e);
+        
+
+        circle_marker_a158e2e7974afd0f781d7f1179d3f1c7.bindPopup(popup_c2128e36c51c7795bea7526c87e881ca)
+        ;
+
+        
+    
+    
+            var circle_marker_54288f91a3b5a1c327117ead345714b9 = L.circleMarker(
+                [-32.42158351315435, 26.99026158975349],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_b6598c1c3f5f8ab92a123ad845fe7957 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7986c5ec44a7877effee4febe03792c = $(`<div id="html_e7986c5ec44a7877effee4febe03792c" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Amahlathi Ward 4<br><b>Latitude:</b> -32.421584<br><b>Longitude:</b> 26.990262<br><b>Suitability:</b> 90.8<br><b>Solar GHI:</b> 2165.3<br><b>Dist to Road:</b> 3.82 km<br><b>Dist to Town:</b> 59.26 km</div>`)[0];
+            popup_b6598c1c3f5f8ab92a123ad845fe7957.setContent(html_e7986c5ec44a7877effee4febe03792c);
+        
+
+        circle_marker_54288f91a3b5a1c327117ead345714b9.bindPopup(popup_b6598c1c3f5f8ab92a123ad845fe7957)
+        ;
+
+        
+    
+    
+            var circle_marker_5a11f8c3b8403349742983cc482093d3 = L.circleMarker(
+                [-32.24115670058171, 26.99028088784685],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_d0eb63c2ab58111a44090547f04283df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38847b1fb8d8b8a6581fb9fdc66bd11f = $(`<div id="html_38847b1fb8d8b8a6581fb9fdc66bd11f" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Amahlathi Ward 4<br><b>Latitude:</b> -32.241157<br><b>Longitude:</b> 26.990281<br><b>Suitability:</b> 89.4<br><b>Solar GHI:</b> 2146.4<br><b>Dist to Road:</b> 6.99 km<br><b>Dist to Town:</b> 39.83 km</div>`)[0];
+            popup_d0eb63c2ab58111a44090547f04283df.setContent(html_38847b1fb8d8b8a6581fb9fdc66bd11f);
+        
+
+        circle_marker_5a11f8c3b8403349742983cc482093d3.bindPopup(popup_d0eb63c2ab58111a44090547f04283df)
+        ;
+
+        
+    
+    
+            var circle_marker_5e0928cdc13ccda2052456290011711f = L.circleMarker(
+                [-31.33878913623095, 27.20062015965168],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_a7a7fa00459e6eb6de82efc7058b88bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e218bbc961dd6ef4434fbdd545c05b33 = $(`<div id="html_e218bbc961dd6ef4434fbdd545c05b33" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Maletswai Ward 1<br><b>Latitude:</b> -31.338789<br><b>Longitude:</b> 27.200620<br><b>Suitability:</b> 88.8<br><b>Solar GHI:</b> 2166.4<br><b>Dist to Road:</b> 9.58 km<br><b>Dist to Town:</b> 69.41 km</div>`)[0];
+            popup_a7a7fa00459e6eb6de82efc7058b88bd.setContent(html_e218bbc961dd6ef4434fbdd545c05b33);
+        
+
+        circle_marker_5e0928cdc13ccda2052456290011711f.bindPopup(popup_a7a7fa00459e6eb6de82efc7058b88bd)
+        ;
+
+        
+    
+    
+            var circle_marker_4f5c5c08d2dda68d3ef589f960655168 = L.circleMarker(
+                [-31.15777279440774, 26.57070542240631],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_d58574ae663ccc10940a4ae0263f6286 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13c17caedcf71239fceb3a7a6d1b4a2f = $(`<div id="html_13c17caedcf71239fceb3a7a6d1b4a2f" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Gariep Ward 3<br><b>Latitude:</b> -31.157773<br><b>Longitude:</b> 26.570705<br><b>Suitability:</b> 88.5<br><b>Solar GHI:</b> 2196.9<br><b>Dist to Road:</b> 21.54 km<br><b>Dist to Town:</b> 86.69 km</div>`)[0];
+            popup_d58574ae663ccc10940a4ae0263f6286.setContent(html_13c17caedcf71239fceb3a7a6d1b4a2f);
+        
+
+        circle_marker_4f5c5c08d2dda68d3ef589f960655168.bindPopup(popup_d58574ae663ccc10940a4ae0263f6286)
+        ;
+
+        
+    
+    
+            var circle_marker_25796e3f62332f0cbc3333995420f084 = L.circleMarker(
+                [-32.24041074506867, 26.56569061979764],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_9024ff595cd7f5681fe4e6415c9f271e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7459907465465a5c8a0a47135e64e5a = $(`<div id="html_d7459907465465a5c8a0a47135e64e5a" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Lukhanji Ward 13<br><b>Latitude:</b> -32.240411<br><b>Longitude:</b> 26.565691<br><b>Suitability:</b> 88.4<br><b>Solar GHI:</b> 2144.0<br><b>Dist to Road:</b> 6.70 km<br><b>Dist to Town:</b> 47.63 km</div>`)[0];
+            popup_9024ff595cd7f5681fe4e6415c9f271e.setContent(html_d7459907465465a5c8a0a47135e64e5a);
+        
+
+        circle_marker_25796e3f62332f0cbc3333995420f084.bindPopup(popup_9024ff595cd7f5681fe4e6415c9f271e)
+        ;
+
+        
+    
+    
+            var circle_marker_9389dd9d840e618b63881cddcdd39344 = L.circleMarker(
+                [-31.88012785464861, 27.20178441064961],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_9564d0e90806a958b889c6e6d2ad53e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7e5a128eba7e2f983f5cb4f0b674c8e = $(`<div id="html_a7e5a128eba7e2f983f5cb4f0b674c8e" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Tshatshu<br><b>Latitude:</b> -31.880128<br><b>Longitude:</b> 27.201784<br><b>Suitability:</b> 87.6<br><b>Solar GHI:</b> 2135.4<br><b>Dist to Road:</b> 11.78 km<br><b>Dist to Town:</b> 31.53 km</div>`)[0];
+            popup_9564d0e90806a958b889c6e6d2ad53e0.setContent(html_a7e5a128eba7e2f983f5cb4f0b674c8e);
+        
+
+        circle_marker_9389dd9d840e618b63881cddcdd39344.bindPopup(popup_9564d0e90806a958b889c6e6d2ad53e0)
+        ;
+
+        
+    
+    
+            var circle_marker_741532db295a725bc50d86bd01e9da68 = L.circleMarker(
+                [-31.69917881717918, 27.41244442545613],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_4c702981cc999b7d8bf39edc0f28048c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a94bb6a7c43362d51f8cb9687a71411e = $(`<div id="html_a94bb6a7c43362d51f8cb9687a71411e" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> KuNdonga<br><b>Latitude:</b> -31.699179<br><b>Longitude:</b> 27.412444<br><b>Suitability:</b> 87.4<br><b>Solar GHI:</b> 2139.7<br><b>Dist to Road:</b> 5.76 km<br><b>Dist to Town:</b> 55.92 km</div>`)[0];
+            popup_4c702981cc999b7d8bf39edc0f28048c.setContent(html_a94bb6a7c43362d51f8cb9687a71411e);
+        
+
+        circle_marker_741532db295a725bc50d86bd01e9da68.bindPopup(popup_4c702981cc999b7d8bf39edc0f28048c)
+        ;
+
+        
+    
+    
+            var circle_marker_5d9cdeb499a082299ef8af70a1e10653 = L.circleMarker(
+                [-31.33828831804491, 27.41086204995299],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_eff50a06c9fbe0928d5ad15b0cd42c97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e90969b7c04f68eb345837070f7941fd = $(`<div id="html_e90969b7c04f68eb345837070f7941fd" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Senqu Ward 15<br><b>Latitude:</b> -31.338288<br><b>Longitude:</b> 27.410862<br><b>Suitability:</b> 85.1<br><b>Solar GHI:</b> 2176.3<br><b>Dist to Road:</b> 27.37 km<br><b>Dist to Town:</b> 80.47 km</div>`)[0];
+            popup_eff50a06c9fbe0928d5ad15b0cd42c97.setContent(html_e90969b7c04f68eb345837070f7941fd);
+        
+
+        circle_marker_5d9cdeb499a082299ef8af70a1e10653.bindPopup(popup_eff50a06c9fbe0928d5ad15b0cd42c97)
+        ;
+
+        
+    
+    
+            var circle_marker_2fc7d4107738ad09fb6af8ed7c2d9f45 = L.circleMarker(
+                [-31.88028761456689, 26.99031896979669],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_114fff09140db6c8ada3adc28f7767d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef8391db82414f8b0faa7e4168cc25f6 = $(`<div id="html_ef8391db82414f8b0faa7e4168cc25f6" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Lukhanji Ward 4<br><b>Latitude:</b> -31.880288<br><b>Longitude:</b> 26.990319<br><b>Suitability:</b> 83.6<br><b>Solar GHI:</b> 2095.4<br><b>Dist to Road:</b> 14.55 km<br><b>Dist to Town:</b> 11.62 km</div>`)[0];
+            popup_114fff09140db6c8ada3adc28f7767d2.setContent(html_ef8391db82414f8b0faa7e4168cc25f6);
+        
+
+        circle_marker_2fc7d4107738ad09fb6af8ed7c2d9f45.bindPopup(popup_114fff09140db6c8ada3adc28f7767d2)
+        ;
+
+        
+    
+    
+            var circle_marker_106b4b79fff89eab621529563b8bf60e = L.circleMarker(
+                [-31.87961638046895, 27.41324632656501],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_be27763cf495b2e75c7dc577519349d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_831cc69ec181f4b920cbad18b0a7c7b1 = $(`<div id="html_831cc69ec181f4b920cbad18b0a7c7b1" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Intsika Yethu Ward 20<br><b>Latitude:</b> -31.879616<br><b>Longitude:</b> 27.413246<br><b>Suitability:</b> 83.3<br><b>Solar GHI:</b> 2103.6<br><b>Dist to Road:</b> 5.05 km<br><b>Dist to Town:</b> 51.51 km</div>`)[0];
+            popup_be27763cf495b2e75c7dc577519349d7.setContent(html_831cc69ec181f4b920cbad18b0a7c7b1);
+        
+
+        circle_marker_106b4b79fff89eab621529563b8bf60e.bindPopup(popup_be27763cf495b2e75c7dc577519349d7)
+        ;
+
+        
+    
+    
+            var circle_marker_d41b788f67f26452c62b7840b5b2a335 = L.circleMarker(
+                [-30.9764508705866, 26.36207638835131],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_e669cde9095a1565c915146a64d7d926 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5179542739ef2ef2b1e0d03683b5ca4c = $(`<div id="html_5179542739ef2ef2b1e0d03683b5ca4c" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Gariep Ward 3<br><b>Latitude:</b> -30.976451<br><b>Longitude:</b> 26.362076<br><b>Suitability:</b> 82.3<br><b>Solar GHI:</b> 2137.9<br><b>Dist to Road:</b> 5.34 km<br><b>Dist to Town:</b> 112.83 km</div>`)[0];
+            popup_e669cde9095a1565c915146a64d7d926.setContent(html_5179542739ef2ef2b1e0d03683b5ca4c);
+        
+
+        circle_marker_d41b788f67f26452c62b7840b5b2a335.bindPopup(popup_e669cde9095a1565c915146a64d7d926)
+        ;
+
+        
+    
+    
+            var circle_marker_f1981dcdfecaabcb76615419cef7b2b1 = L.circleMarker(
+                [-30.79599439013983, 26.36327119592206],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_8c0217d780e786f8154f1d8b3458acfd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80adb903fe805a736e0f3f59827901ff = $(`<div id="html_80adb903fe805a736e0f3f59827901ff" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Gariep Ward 3<br><b>Latitude:</b> -30.795994<br><b>Longitude:</b> 26.363271<br><b>Suitability:</b> 81.8<br><b>Solar GHI:</b> 2161.8<br><b>Dist to Road:</b> 14.38 km<br><b>Dist to Town:</b> 131.17 km</div>`)[0];
+            popup_8c0217d780e786f8154f1d8b3458acfd.setContent(html_80adb903fe805a736e0f3f59827901ff);
+        
+
+        circle_marker_f1981dcdfecaabcb76615419cef7b2b1.bindPopup(popup_8c0217d780e786f8154f1d8b3458acfd)
+        ;
+
+        
+    
+    
+            var circle_marker_bda97c260522a3eefc047e9c10557d15 = L.circleMarker(
+                [-31.87581110591257, 25.9330681744578],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_2d4c74d6375b2dd591653d70c8ff9a31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2e80363815be2347b4fc89c34215771 = $(`<div id="html_c2e80363815be2347b4fc89c34215771" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Tsolwana Ward 5<br><b>Latitude:</b> -31.875811<br><b>Longitude:</b> 25.933068<br><b>Suitability:</b> 81.6<br><b>Solar GHI:</b> 2113.7<br><b>Dist to Road:</b> 4.18 km<br><b>Dist to Town:</b> 88.55 km</div>`)[0];
+            popup_2d4c74d6375b2dd591653d70c8ff9a31.setContent(html_c2e80363815be2347b4fc89c34215771);
+        
+
+        circle_marker_bda97c260522a3eefc047e9c10557d15.bindPopup(popup_2d4c74d6375b2dd591653d70c8ff9a31)
+        ;
+
+        
+    
+    
+            var circle_marker_7d48a0c94c5a1a9b4bd8ca703d01ac69 = L.circleMarker(
+                [-31.33894556770662, 26.99037482763634],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_075a159296807c25a82f60921e364109 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61abf55494bc2088b523b906f849d9d0 = $(`<div id="html_61abf55494bc2088b523b906f849d9d0" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Maletswai Ward 1<br><b>Latitude:</b> -31.338946<br><b>Longitude:</b> 26.990375<br><b>Suitability:</b> 80.8<br><b>Solar GHI:</b> 2098.2<br><b>Dist to Road:</b> 8.84 km<br><b>Dist to Town:</b> 62.91 km</div>`)[0];
+            popup_075a159296807c25a82f60921e364109.setContent(html_61abf55494bc2088b523b906f849d9d0);
+        
+
+        circle_marker_7d48a0c94c5a1a9b4bd8ca703d01ac69.bindPopup(popup_075a159296807c25a82f60921e364109)
+        ;
+
+        
+    
+    
+            var circle_marker_0d32b23419504fc03d3c3cea751fbb2d = L.circleMarker(
+                [-31.69965474634356, 26.77928284123782],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_d056505668e96eeccad7ee3738bf055c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5717f6226250a341554dc7ee976441e = $(`<div id="html_d5717f6226250a341554dc7ee976441e" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Inkwanca Ward 3<br><b>Latitude:</b> -31.699655<br><b>Longitude:</b> 26.779283<br><b>Suitability:</b> 80.3<br><b>Solar GHI:</b> 2072.7<br><b>Dist to Road:</b> 11.67 km<br><b>Dist to Town:</b> 23.46 km</div>`)[0];
+            popup_d056505668e96eeccad7ee3738bf055c.setContent(html_d5717f6226250a341554dc7ee976441e);
+        
+
+        circle_marker_0d32b23419504fc03d3c3cea751fbb2d.bindPopup(popup_d056505668e96eeccad7ee3738bf055c)
+        ;
+
+        
+    
+    
+            var circle_marker_2b29bc543b7f4d16b23ac8753f88f50b = L.circleMarker(
+                [-31.51867261432967, 26.56906373070097],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_dd76987de2ac0338a9b02056f138611f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef1f262aa8ac81eabfcdaff766e1897c = $(`<div id="html_ef1f262aa8ac81eabfcdaff766e1897c" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Inkwanca Ward 2<br><b>Latitude:</b> -31.518673<br><b>Longitude:</b> 26.569064<br><b>Suitability:</b> 79.0<br><b>Solar GHI:</b> 2126.0<br><b>Dist to Road:</b> 37.88 km<br><b>Dist to Town:</b> 50.66 km</div>`)[0];
+            popup_dd76987de2ac0338a9b02056f138611f.setContent(html_ef1f262aa8ac81eabfcdaff766e1897c);
+        
+
+        circle_marker_2b29bc543b7f4d16b23ac8753f88f50b.bindPopup(popup_dd76987de2ac0338a9b02056f138611f)
+        ;
+
+        
+    
+    
+            var circle_marker_a1c5014988c1e6b17b52234009d8960d = L.circleMarker(
+                [-31.51656008799969, 26.14780083356829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_55cd157138de01c9fde303f38e3a06e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbae28a46748ab0c48198ba04222f384 = $(`<div id="html_cbae28a46748ab0c48198ba04222f384" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Inkwanca Ward 2<br><b>Latitude:</b> -31.516560<br><b>Longitude:</b> 26.147801<br><b>Suitability:</b> 78.1<br><b>Solar GHI:</b> 2080.4<br><b>Dist to Road:</b> 3.94 km<br><b>Dist to Town:</b> 80.30 km</div>`)[0];
+            popup_55cd157138de01c9fde303f38e3a06e9.setContent(html_cbae28a46748ab0c48198ba04222f384);
+        
+
+        circle_marker_a1c5014988c1e6b17b52234009d8960d.bindPopup(popup_55cd157138de01c9fde303f38e3a06e9)
+        ;
+
+        
+    
+    
+            var circle_marker_8d3dd6cc78f1dc7e39e32dd34f420ac8 = L.circleMarker(
+                [-31.69698745651547, 26.14615574568279],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_9cf677f0214648121523361d2a0429fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43a3f376343cfc39c77b74b71b5cc3ec = $(`<div id="html_43a3f376343cfc39c77b74b71b5cc3ec" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Tsolwana Ward 5<br><b>Latitude:</b> -31.696987<br><b>Longitude:</b> 26.146156<br><b>Suitability:</b> 78.1<br><b>Solar GHI:</b> 2089.9<br><b>Dist to Road:</b> 12.98 km<br><b>Dist to Town:</b> 71.93 km</div>`)[0];
+            popup_9cf677f0214648121523361d2a0429fa.setContent(html_43a3f376343cfc39c77b74b71b5cc3ec);
+        
+
+        circle_marker_8d3dd6cc78f1dc7e39e32dd34f420ac8.bindPopup(popup_9cf677f0214648121523361d2a0429fa)
+        ;
+
+        
+    
+    
+            var circle_marker_34c3f9e5ff71a4b3b648627f385dff84 = L.circleMarker(
+                [-31.33875760309761, 26.78012966074664],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_0fcd48aa0f72007cff53fc6ed877269b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24ff9557e5728a5fed11d7bddb39c81f = $(`<div id="html_24ff9557e5728a5fed11d7bddb39c81f" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Maletswai Ward 1<br><b>Latitude:</b> -31.338758<br><b>Longitude:</b> 26.780130<br><b>Suitability:</b> 76.8<br><b>Solar GHI:</b> 2098.7<br><b>Dist to Road:</b> 27.25 km<br><b>Dist to Town:</b> 62.44 km</div>`)[0];
+            popup_0fcd48aa0f72007cff53fc6ed877269b.setContent(html_24ff9557e5728a5fed11d7bddb39c81f);
+        
+
+        circle_marker_34c3f9e5ff71a4b3b648627f385dff84.bindPopup(popup_0fcd48aa0f72007cff53fc6ed877269b)
+        ;
+
+        
+    
+    
+            var circle_marker_4dc229d187e87177964b6cb040ce839f = L.circleMarker(
+                [-31.15833270762628, 27.20023899615373],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_0268466768f9a60161bad27dd02342d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2d6c8168d7dffafc3d8274780c829c5 = $(`<div id="html_c2d6c8168d7dffafc3d8274780c829c5" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Senqu Ward 15<br><b>Latitude:</b> -31.158333<br><b>Longitude:</b> 27.200239<br><b>Suitability:</b> 76.6<br><b>Solar GHI:</b> 2069.8<br><b>Dist to Road:</b> 1.79 km<br><b>Dist to Town:</b> 87.70 km</div>`)[0];
+            popup_0268466768f9a60161bad27dd02342d1.setContent(html_c2d6c8168d7dffafc3d8274780c829c5);
+        
+
+        circle_marker_4dc229d187e87177964b6cb040ce839f.bindPopup(popup_0268466768f9a60161bad27dd02342d1)
+        ;
+
+        
+    
+    
+            var circle_marker_910d8dc666f42cd4e81b7400bdf76ca7 = L.circleMarker(
+                [-30.07563712206421, 26.99049944218203],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_168f0ace9e24e7ab0a625d7ff119ca78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6e16a6c34880c43508cdaadccf96abb = $(`<div id="html_a6e16a6c34880c43508cdaadccf96abb" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> S748<br><b>Latitude:</b> -30.075637<br><b>Longitude:</b> 26.990499<br><b>Suitability:</b> 75.2<br><b>Solar GHI:</b> 2139.1<br><b>Dist to Road:</b> 2.97 km<br><b>Dist to Town:</b> 202.19 km</div>`)[0];
+            popup_168f0ace9e24e7ab0a625d7ff119ca78.setContent(html_a6e16a6c34880c43508cdaadccf96abb);
+        
+
+        circle_marker_910d8dc666f42cd4e81b7400bdf76ca7.bindPopup(popup_168f0ace9e24e7ab0a625d7ff119ca78)
+        ;
+
+        
+    
+    
+            var circle_marker_ab6fdea88ae30bbc0ba1546cb0d3146a = L.circleMarker(
+                [-31.87740963726072, 26.14449583547644],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_11051580a49967726e902105c2a805ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5808fab34882819c38f1faa0077d05b8 = $(`<div id="html_5808fab34882819c38f1faa0077d05b8" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Tsolwana Ward 4<br><b>Latitude:</b> -31.877410<br><b>Longitude:</b> 26.144496<br><b>Suitability:</b> 74.0<br><b>Solar GHI:</b> 2071.3<br><b>Dist to Road:</b> 22.02 km<br><b>Dist to Town:</b> 68.55 km</div>`)[0];
+            popup_11051580a49967726e902105c2a805ce.setContent(html_5808fab34882819c38f1faa0077d05b8);
+        
+
+        circle_marker_ab6fdea88ae30bbc0ba1546cb0d3146a.bindPopup(popup_11051580a49967726e902105c2a805ce)
+        ;
+
+        
+    
+    
+            var circle_marker_ef4dfde20e2df1c5e1b4cc50c7b7988b = L.circleMarker(
+                [-32.41267178594902, 25.50144674397597],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_27cfdf590c4a5541e3b1927bb1ea2644 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_046c399a7bf2cfba00625823577652bc = $(`<div id="html_046c399a7bf2cfba00625823577652bc" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Blue Crane Route Ward 4<br><b>Latitude:</b> -32.412672<br><b>Longitude:</b> 25.501447<br><b>Suitability:</b> 73.4<br><b>Solar GHI:</b> 2085.4<br><b>Dist to Road:</b> 4.38 km<br><b>Dist to Town:</b> 141.07 km</div>`)[0];
+            popup_27cfdf590c4a5541e3b1927bb1ea2644.setContent(html_046c399a7bf2cfba00625823577652bc);
+        
+
+        circle_marker_ef4dfde20e2df1c5e1b4cc50c7b7988b.bindPopup(popup_27cfdf590c4a5541e3b1927bb1ea2644)
+        ;
+
+        
+    
+    
+            var circle_marker_403a2476cf93789dfd1de109e2b8156a = L.circleMarker(
+                [-30.97370378955733, 25.94323463492785],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_bdcbe3f6383b716c511874c43e45fe03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d20f9beabe428315b56aca830d0628cc = $(`<div id="html_d20f9beabe428315b56aca830d0628cc" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Gariep Ward 1<br><b>Latitude:</b> -30.973704<br><b>Longitude:</b> 25.943235<br><b>Suitability:</b> 72.4<br><b>Solar GHI:</b> 2136.8<br><b>Dist to Road:</b> 41.02 km<br><b>Dist to Town:</b> 134.95 km</div>`)[0];
+            popup_bdcbe3f6383b716c511874c43e45fe03.setContent(html_d20f9beabe428315b56aca830d0628cc);
+        
+
+        circle_marker_403a2476cf93789dfd1de109e2b8156a.bindPopup(popup_bdcbe3f6383b716c511874c43e45fe03)
+        ;
+
+        
+    
+    
+            var circle_marker_17250a249d907c1d52a27927e24d1593 = L.circleMarker(
+                [-30.07545831852016, 26.78297623617664],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_a480080c8b52d8d5b8d56240808dd330 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c2a4d5dfffffebf783cbbfea1c28e2e = $(`<div id="html_7c2a4d5dfffffebf783cbbfea1c28e2e" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Mohokare Ward 4<br><b>Latitude:</b> -30.075458<br><b>Longitude:</b> 26.782976<br><b>Suitability:</b> 72.3<br><b>Solar GHI:</b> 2136.7<br><b>Dist to Road:</b> 14.87 km<br><b>Dist to Town:</b> 202.04 km</div>`)[0];
+            popup_a480080c8b52d8d5b8d56240808dd330.setContent(html_7c2a4d5dfffffebf783cbbfea1c28e2e);
+        
+
+        circle_marker_17250a249d907c1d52a27927e24d1593.bindPopup(popup_a480080c8b52d8d5b8d56240808dd330)
+        ;
+
+        
+    
+    
+            var circle_marker_223bfc735db373205060e86d122d7c0a = L.circleMarker(
+                [-31.51306094644021, 25.72659675289955],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_a4c54bcb5ce02aa27607ffe93de96646 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e79e4326d026afca6d1bf074bd1d2483 = $(`<div id="html_e79e4326d026afca6d1bf074bd1d2483" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Tsolwana Ward 5<br><b>Latitude:</b> -31.513061<br><b>Longitude:</b> 25.726597<br><b>Suitability:</b> 72.0<br><b>Solar GHI:</b> 2105.2<br><b>Dist to Road:</b> 31.74 km<br><b>Dist to Town:</b> 116.32 km</div>`)[0];
+            popup_a4c54bcb5ce02aa27607ffe93de96646.setContent(html_e79e4326d026afca6d1bf074bd1d2483);
+        
+
+        circle_marker_223bfc735db373205060e86d122d7c0a.bindPopup(popup_a4c54bcb5ce02aa27607ffe93de96646)
+        ;
+
+        
+    
+    
+            var circle_marker_f3f416ae5520bc6979ac142f94f60c95 = L.circleMarker(
+                [-31.51079164461028, 25.51602584633769],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_05a16f00160cfd2e1262e34e853f2178 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ca3aa87d692cdd340580ec0e58e1c86 = $(`<div id="html_5ca3aa87d692cdd340580ec0e58e1c86" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Inxuba Yethemba Ward 9<br><b>Latitude:</b> -31.510792<br><b>Longitude:</b> 25.516026<br><b>Suitability:</b> 71.6<br><b>Solar GHI:</b> 2145.7<br><b>Dist to Road:</b> 49.58 km<br><b>Dist to Town:</b> 135.17 km</div>`)[0];
+            popup_05a16f00160cfd2e1262e34e853f2178.setContent(html_5ca3aa87d692cdd340580ec0e58e1c86);
+        
+
+        circle_marker_f3f416ae5520bc6979ac142f94f60c95.bindPopup(popup_05a16f00160cfd2e1262e34e853f2178)
+        ;
+
+        
+    
+    
+            var circle_marker_3a097ae410259e3b3b5b7ff0f29895e4 = L.circleMarker(
+                [-32.41502159691192, 25.71408487855946],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_ca9027e352f12e2aa8ec2a6943261ebd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94917fd7fc6a88987f1421df23febb8c = $(`<div id="html_94917fd7fc6a88987f1421df23febb8c" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Inxuba Yethemba Ward 6<br><b>Latitude:</b> -32.415022<br><b>Longitude:</b> 25.714085<br><b>Suitability:</b> 71.6<br><b>Solar GHI:</b> 2074.6<br><b>Dist to Road:</b> 13.46 km<br><b>Dist to Town:</b> 123.12 km</div>`)[0];
+            popup_ca9027e352f12e2aa8ec2a6943261ebd.setContent(html_94917fd7fc6a88987f1421df23febb8c);
+        
+
+        circle_marker_3a097ae410259e3b3b5b7ff0f29895e4.bindPopup(popup_ca9027e352f12e2aa8ec2a6943261ebd)
+        ;
+
+        
+    
+    
+            var circle_marker_d54cfe9932cbb0a8e17c70aa32d0c42c = L.circleMarker(
+                [-31.33822525366784, 26.56988826580488],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_6746ebf6c1ebdfe3b8f93979be02a86f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f32dfbdf0a1d7bc419b82158b0af190 = $(`<div id="html_1f32dfbdf0a1d7bc419b82158b0af190" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> DR02640<br><b>Latitude:</b> -31.338225<br><b>Longitude:</b> 26.569888<br><b>Suitability:</b> 71.4<br><b>Solar GHI:</b> 2065.6<br><b>Dist to Road:</b> 30.58 km<br><b>Dist to Town:</b> 68.12 km</div>`)[0];
+            popup_6746ebf6c1ebdfe3b8f93979be02a86f.setContent(html_1f32dfbdf0a1d7bc419b82158b0af190);
+        
+
+        circle_marker_d54cfe9932cbb0a8e17c70aa32d0c42c.bindPopup(popup_6746ebf6c1ebdfe3b8f93979be02a86f)
+        ;
+
+        
+    
+    
+            var circle_marker_54840d6438f65e6b60192375ac1ed9ab = L.circleMarker(
+                [-30.79139758259361, 25.73620974576151],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_e6ff359757d87c961ef19c92b2836ac3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_847c891b65cab0abd0866b0f05b67b6e = $(`<div id="html_847c891b65cab0abd0866b0f05b67b6e" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Gariep Ward 1<br><b>Latitude:</b> -30.791398<br><b>Longitude:</b> 25.736210<br><b>Suitability:</b> 71.0<br><b>Solar GHI:</b> 2191.9<br><b>Dist to Road:</b> 67.90 km<br><b>Dist to Town:</b> 163.18 km</div>`)[0];
+            popup_e6ff359757d87c961ef19c92b2836ac3.setContent(html_847c891b65cab0abd0866b0f05b67b6e);
+        
+
+        circle_marker_54840d6438f65e6b60192375ac1ed9ab.bindPopup(popup_e6ff359757d87c961ef19c92b2836ac3)
+        ;
+
+        
+    
+    
+            var circle_marker_32f18d628a9b42b58e8f47acd67d00f7 = L.circleMarker(
+                [-32.41864488716121, 26.13942597150567],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_110ca3e9fee0847c030f0932623d7c24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d9b120624206ce6df47b35eb8c4d1a6 = $(`<div id="html_3d9b120624206ce6df47b35eb8c4d1a6" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Nxuba Ward 4<br><b>Latitude:</b> -32.418645<br><b>Longitude:</b> 26.139426<br><b>Suitability:</b> 70.6<br><b>Solar GHI:</b> 2083.5<br><b>Dist to Road:</b> 35.74 km<br><b>Dist to Town:</b> 89.87 km</div>`)[0];
+            popup_110ca3e9fee0847c030f0932623d7c24.setContent(html_3d9b120624206ce6df47b35eb8c4d1a6);
+        
+
+        circle_marker_32f18d628a9b42b58e8f47acd67d00f7.bindPopup(popup_110ca3e9fee0847c030f0932623d7c24)
+        ;
+
+        
+    
+    
+            var circle_marker_ca65bb1b219f3a79c2aab3c3809a93ca = L.circleMarker(
+                [-30.79740466533388, 27.19948688679892],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_4cc7e9b1d67ce068db41a04df5ad1236 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_946fc90d1054c62e4afa6fa869d83278 = $(`<div id="html_946fc90d1054c62e4afa6fa869d83278" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> R58<br><b>Latitude:</b> -30.797405<br><b>Longitude:</b> 27.199487<br><b>Suitability:</b> 70.4<br><b>Solar GHI:</b> 2068.2<br><b>Dist to Road:</b> 13.80 km<br><b>Dist to Town:</b> 125.86 km</div>`)[0];
+            popup_4cc7e9b1d67ce068db41a04df5ad1236.setContent(html_946fc90d1054c62e4afa6fa869d83278);
+        
+
+        circle_marker_ca65bb1b219f3a79c2aab3c3809a93ca.bindPopup(popup_4cc7e9b1d67ce068db41a04df5ad1236)
+        ;
+
+        
+    
+    
+            var circle_marker_b6dc10e2eb59a26cacd37b2406fb6579 = L.circleMarker(
+                [-30.25543460888515, 26.57468252784658],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_2974c525c12b8fa678de2c795f2d26af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b62c2207387a1ba86a2931e3dd927c2f = $(`<div id="html_b62c2207387a1ba86a2931e3dd927c2f" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> N6<br><b>Latitude:</b> -30.255435<br><b>Longitude:</b> 26.574683<br><b>Suitability:</b> 70.3<br><b>Solar GHI:</b> 2123.7<br><b>Dist to Road:</b> 23.67 km<br><b>Dist to Town:</b> 184.08 km</div>`)[0];
+            popup_2974c525c12b8fa678de2c795f2d26af.setContent(html_b62c2207387a1ba86a2931e3dd927c2f);
+        
+
+        circle_marker_b6dc10e2eb59a26cacd37b2406fb6579.bindPopup(popup_2974c525c12b8fa678de2c795f2d26af)
+        ;
+
+        
+    
+    
+            var circle_marker_acb31202d8cbc128cbfe4d87f02b2573 = L.circleMarker(
+                [-32.05782661356621, 26.14282098381182],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_9f5c6f0569895bc8738a14fbc9f672f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c237ca29b6f4cb9a613e6ed4ad8c20b = $(`<div id="html_9c237ca29b6f4cb9a613e6ed4ad8c20b" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Tsolwana Ward 5<br><b>Latitude:</b> -32.057827<br><b>Longitude:</b> 26.142821<br><b>Suitability:</b> 69.6<br><b>Solar GHI:</b> 2054.7<br><b>Dist to Road:</b> 31.06 km<br><b>Dist to Town:</b> 70.89 km</div>`)[0];
+            popup_9f5c6f0569895bc8738a14fbc9f672f5.setContent(html_9c237ca29b6f4cb9a613e6ed4ad8c20b);
+        
+
+        circle_marker_acb31202d8cbc128cbfe4d87f02b2573.bindPopup(popup_9f5c6f0569895bc8738a14fbc9f672f5)
+        ;
+
+        
+    
+    
+            var circle_marker_50f8f17baeb5ab77c6e7093d07b90953 = L.circleMarker(
+                [-31.15690226334598, 26.3608707678059],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_f9bc7b5d5ef4fdfea90d4a55aa49e1b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31648e90dfcb144c23fb2f6e9be6f530 = $(`<div id="html_31648e90dfcb144c23fb2f6e9be6f530" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> DR02644<br><b>Latitude:</b> -31.156902<br><b>Longitude:</b> 26.360871<br><b>Suitability:</b> 69.4<br><b>Solar GHI:</b> 2021.6<br><b>Dist to Road:</b> 3.70 km<br><b>Dist to Town:</b> 95.16 km</div>`)[0];
+            popup_f9bc7b5d5ef4fdfea90d4a55aa49e1b9.setContent(html_31648e90dfcb144c23fb2f6e9be6f530);
+        
+
+        circle_marker_50f8f17baeb5ab77c6e7093d07b90953.bindPopup(popup_f9bc7b5d5ef4fdfea90d4a55aa49e1b9)
+        ;
+
+        
+    
+    
+            var circle_marker_664a9c84fc329b19a0207ce673fbe38f = L.circleMarker(
+                [-32.06053142196748, 26.77842069166116],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_3743866ee543867a5ad5eedb0ee7b45a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcd0ab486710f86c87d2399bf1d08a8f = $(`<div id="html_bcd0ab486710f86c87d2399bf1d08a8f" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Lukhanji Ward 18<br><b>Latitude:</b> -32.060531<br><b>Longitude:</b> 26.778421<br><b>Suitability:</b> 69.2<br><b>Solar GHI:</b> 1969.7<br><b>Dist to Road:</b> 3.92 km<br><b>Dist to Town:</b> 20.04 km</div>`)[0];
+            popup_3743866ee543867a5ad5eedb0ee7b45a.setContent(html_bcd0ab486710f86c87d2399bf1d08a8f);
+        
+
+        circle_marker_664a9c84fc329b19a0207ce673fbe38f.bindPopup(popup_3743866ee543867a5ad5eedb0ee7b45a)
+        ;
+
+        
+    
+    
+            var circle_marker_8345c31817ffac25a583d9793512b3e8 = L.circleMarker(
+                [-30.61708513626827, 26.99044699880204],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_4d218a8c2bb26dc19ec4dd90e4b4a418 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_340b191eac7362de2f7bde2bf5b73c5d = $(`<div id="html_340b191eac7362de2f7bde2bf5b73c5d" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Maletswai Ward 1<br><b>Latitude:</b> -30.617085<br><b>Longitude:</b> 26.990447<br><b>Suitability:</b> 68.8<br><b>Solar GHI:</b> 2094.6<br><b>Dist to Road:</b> 30.09 km<br><b>Dist to Town:</b> 142.32 km</div>`)[0];
+            popup_4d218a8c2bb26dc19ec4dd90e4b4a418.setContent(html_340b191eac7362de2f7bde2bf5b73c5d);
+        
+
+        circle_marker_8345c31817ffac25a583d9793512b3e8.bindPopup(popup_4d218a8c2bb26dc19ec4dd90e4b4a418)
+        ;
+
+        
+    
+    
+            var circle_marker_f1181bdfcd43b53bfff6f9c4c3b47ca4 = L.circleMarker(
+                [-30.96959953363449, 25.52446451142301],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_78e60499c5e7b6f444ca2061ada9c402 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62e787a223157594aadaf4c218af1233 = $(`<div id="html_62e787a223157594aadaf4c218af1233" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> DR02689<br><b>Latitude:</b> -30.969600<br><b>Longitude:</b> 25.524465<br><b>Suitability:</b> 68.7<br><b>Solar GHI:</b> 2189.8<br><b>Dist to Road:</b> 76.70 km<br><b>Dist to Town:</b> 164.00 km</div>`)[0];
+            popup_78e60499c5e7b6f444ca2061ada9c402.setContent(html_62e787a223157594aadaf4c218af1233);
+        
+
+        circle_marker_f1181bdfcd43b53bfff6f9c4c3b47ca4.bindPopup(popup_78e60499c5e7b6f444ca2061ada9c402)
+        ;
+
+        
+    
+    
+            var circle_marker_3963ad9259376d118fb379539ab0d0b9 = L.circleMarker(
+                [-32.23661742447422, 25.9288721956442],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_945e3c695c32370f1986e351c0cd6258 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45ce5a6c641a5a513105ea33365d0f05 = $(`<div id="html_45ce5a6c641a5a513105ea33365d0f05" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Inxuba Yethemba Ward 6<br><b>Latitude:</b> -32.236617<br><b>Longitude:</b> 25.928872<br><b>Suitability:</b> 68.6<br><b>Solar GHI:</b> 2048.2<br><b>Dist to Road:</b> 22.26 km<br><b>Dist to Town:</b> 96.39 km</div>`)[0];
+            popup_945e3c695c32370f1986e351c0cd6258.setContent(html_45ce5a6c641a5a513105ea33365d0f05);
+        
+
+        circle_marker_3963ad9259376d118fb379539ab0d0b9.bindPopup(popup_945e3c695c32370f1986e351c0cd6258)
+        ;
+
+        
+    
+    
+            var circle_marker_2b391ab1cd06bd7251753d7e982097d9 = L.circleMarker(
+                [-31.88009565057605, 26.77885369806235],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_3ed9af8a9e28f91545e19a745c1ad2b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_644628ff97c26402a33476c5c0c73832 = $(`<div id="html_644628ff97c26402a33476c5c0c73832" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Lukhanji Ward 27<br><b>Latitude:</b> -31.880096<br><b>Longitude:</b> 26.778854<br><b>Suitability:</b> 68.3<br><b>Solar GHI:</b> 1954.9<br><b>Dist to Road:</b> 3.87 km<br><b>Dist to Town:</b> 8.73 km</div>`)[0];
+            popup_3ed9af8a9e28f91545e19a745c1ad2b0.setContent(html_644628ff97c26402a33476c5c0c73832);
+        
+
+        circle_marker_2b391ab1cd06bd7251753d7e982097d9.bindPopup(popup_3ed9af8a9e28f91545e19a745c1ad2b0)
+        ;
+
+        
+    
+    
+            var circle_marker_143caeea2bcb63da673c567741201a00 = L.circleMarker(
+                [-30.61690243509144, 26.78177826965938],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_93acf5e0a7152db2ff74bec212c0a5c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0c86c65f4f41e349a6ea5b5612e5e77 = $(`<div id="html_f0c86c65f4f41e349a6ea5b5612e5e77" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Mohokare Ward 2<br><b>Latitude:</b> -30.616902<br><b>Longitude:</b> 26.781778<br><b>Suitability:</b> 68.2<br><b>Solar GHI:</b> 2059.5<br><b>Dist to Road:</b> 12.25 km<br><b>Dist to Town:</b> 142.12 km</div>`)[0];
+            popup_93acf5e0a7152db2ff74bec212c0a5c6.setContent(html_f0c86c65f4f41e349a6ea5b5612e5e77);
+        
+
+        circle_marker_143caeea2bcb63da673c567741201a00.bindPopup(popup_93acf5e0a7152db2ff74bec212c0a5c6)
+        ;
+
+        
+    
+    
+            var circle_marker_79004effbe0b0965db1a4e0e04ff6ab5 = L.circleMarker(
+                [-30.25549503398583, 27.4062823406782],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_1cc6ff815dd0fbc167bb5da3099fbd50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2500f0a3b7edf4e70bcc528cdfb72aed = $(`<div id="html_2500f0a3b7edf4e70bcc528cdfb72aed" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Ha Smith Phosholi<br><b>Latitude:</b> -30.255495<br><b>Longitude:</b> 27.406282<br><b>Suitability:</b> 67.9<br><b>Solar GHI:</b> 2116.9<br><b>Dist to Road:</b> 28.55 km<br><b>Dist to Town:</b> 189.00 km</div>`)[0];
+            popup_1cc6ff815dd0fbc167bb5da3099fbd50.setContent(html_2500f0a3b7edf4e70bcc528cdfb72aed);
+        
+
+        circle_marker_79004effbe0b0965db1a4e0e04ff6ab5.bindPopup(popup_1cc6ff815dd0fbc167bb5da3099fbd50)
+        ;
+
+        
+    
+    
+            var circle_marker_1903cbc364383b8c04b830fc2a820b91 = L.circleMarker(
+                [-32.41701267102563, 25.9267458805716],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_b182eecda9d901dc72037451d46cc056 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_131dd1ba3b649812b46a0da3762cd4f8 = $(`<div id="html_131dd1ba3b649812b46a0da3762cd4f8" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Nxuba Ward 4<br><b>Latitude:</b> -32.417013<br><b>Longitude:</b> 25.926746<br><b>Suitability:</b> 66.4<br><b>Solar GHI:</b> 2053.6<br><b>Dist to Road:</b> 31.30 km<br><b>Dist to Town:</b> 105.91 km</div>`)[0];
+            popup_b182eecda9d901dc72037451d46cc056.setContent(html_131dd1ba3b649812b46a0da3762cd4f8);
+        
+
+        circle_marker_1903cbc364383b8c04b830fc2a820b91.bindPopup(popup_b182eecda9d901dc72037451d46cc056)
+        ;
+
+        
+    
+    
+            var circle_marker_2b9ebd5509149cbeaa2d6f69e606ecfb = L.circleMarker(
+                [-31.33734855131753, 26.35965424923612],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_bdf32d25d48c2e4a98ffd9a2efe6c852 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_061134d0758eb8c1e86c5e02133401c3 = $(`<div id="html_061134d0758eb8c1e86c5e02133401c3" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Inkwanca Ward 2<br><b>Latitude:</b> -31.337349<br><b>Longitude:</b> 26.359654<br><b>Suitability:</b> 66.4<br><b>Solar GHI:</b> 2002.5<br><b>Dist to Road:</b> 12.74 km<br><b>Dist to Town:</b> 78.62 km</div>`)[0];
+            popup_bdf32d25d48c2e4a98ffd9a2efe6c852.setContent(html_061134d0758eb8c1e86c5e02133401c3);
+        
+
+        circle_marker_2b9ebd5509149cbeaa2d6f69e606ecfb.bindPopup(popup_bdf32d25d48c2e4a98ffd9a2efe6c852)
+        ;
+
+        
+    
+    
+            var circle_marker_66cc2e618d43eb9dafc128758ef45f4b = L.circleMarker(
+                [-32.05998394125643, 26.56654526363807],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_48441468b1201ad1fa9310cc34a1b1ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83ed47231aeeae78fd4020b14b995951 = $(`<div id="html_83ed47231aeeae78fd4020b14b995951" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Lukhanji Ward 14<br><b>Latitude:</b> -32.059984<br><b>Longitude:</b> 26.566545<br><b>Suitability:</b> 65.8<br><b>Solar GHI:</b> 1970.8<br><b>Dist to Road:</b> 14.49 km<br><b>Dist to Town:</b> 33.81 km</div>`)[0];
+            popup_48441468b1201ad1fa9310cc34a1b1ca.setContent(html_83ed47231aeeae78fd4020b14b995951);
+        
+
+        circle_marker_66cc2e618d43eb9dafc128758ef45f4b.bindPopup(popup_48441468b1201ad1fa9310cc34a1b1ca)
+        ;
+
+        
+    
+    
+            var circle_marker_d7ff0736702c023a38fa3ebed57059a7 = L.circleMarker(
+                [-30.797373795663, 26.78137167291985],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_31c451e035eb514610d6be2e979f230a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0497429908a16643b2184ff557f3cc74 = $(`<div id="html_0497429908a16643b2184ff557f3cc74" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Somerset Street<br><b>Latitude:</b> -30.797374<br><b>Longitude:</b> 26.781372<br><b>Suitability:</b> 65.8<br><b>Solar GHI:</b> 2042.4<br><b>Dist to Road:</b> 21.30 km<br><b>Dist to Town:</b> 122.16 km</div>`)[0];
+            popup_31c451e035eb514610d6be2e979f230a.setContent(html_0497429908a16643b2184ff557f3cc74);
+        
+
+        circle_marker_d7ff0736702c023a38fa3ebed57059a7.bindPopup(popup_31c451e035eb514610d6be2e979f230a)
+        ;
+
+        
+    
+    
+            var circle_marker_89ec239f7421437ebce0cf6b7362ed6c = L.circleMarker(
+                [-32.2346400996528, 25.71663225563381],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_f38c96424a73d029ee0e54dc95c7e019 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a190b87db29cb71fa07ac67db8ea05b3 = $(`<div id="html_a190b87db29cb71fa07ac67db8ea05b3" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Inxuba Yethemba Ward 6<br><b>Latitude:</b> -32.234640<br><b>Longitude:</b> 25.716632<br><b>Suitability:</b> 65.5<br><b>Solar GHI:</b> 2006.4<br><b>Dist to Road:</b> 4.42 km<br><b>Dist to Town:</b> 115.03 km</div>`)[0];
+            popup_f38c96424a73d029ee0e54dc95c7e019.setContent(html_a190b87db29cb71fa07ac67db8ea05b3);
+        
+
+        circle_marker_89ec239f7421437ebce0cf6b7362ed6c.bindPopup(popup_f38c96424a73d029ee0e54dc95c7e019)
+        ;
+
+        
+    
+    
+            var circle_marker_8dd2d02c74f1141b310ff733e24b03e0 = L.circleMarker(
+                [-31.87955197426859, 26.56739228948449],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_916c3132664a759b557bc5d265ccbefe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb2111a8cf760b83df163bfccb117406 = $(`<div id="html_cb2111a8cf760b83df163bfccb117406" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Tsolwana Ward 2<br><b>Latitude:</b> -31.879552<br><b>Longitude:</b> 26.567392<br><b>Suitability:</b> 65.3<br><b>Solar GHI:</b> 1976.3<br><b>Dist to Road:</b> 22.29 km<br><b>Dist to Town:</b> 28.59 km</div>`)[0];
+            popup_916c3132664a759b557bc5d265ccbefe.setContent(html_cb2111a8cf760b83df163bfccb117406);
+        
+
+        circle_marker_8dd2d02c74f1141b310ff733e24b03e0.bindPopup(popup_916c3132664a759b557bc5d265ccbefe)
+        ;
+
+        
+    
+    
+            var circle_marker_7920c4bf50a2b271f4d18923018c4a5f = L.circleMarker(
+                [-31.15848803792399, 26.99039311490221],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3f274b564d62e1223e928379bb63b379);
+        
+    
+        var popup_09fd44e14878b35b7422b9f97035b6e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cf12057d82b0072dc1c4963a6acd069 = $(`<div id="html_5cf12057d82b0072dc1c4963a6acd069" style="width: 100.0%; height: 100.0%;"><b>Nearest Place:</b> Maletswai Ward 1<br><b>Latitude:</b> -31.158488<br><b>Longitude:</b> 26.990393<br><b>Suitability:</b> 65.2<br><b>Solar GHI:</b> 2002.8<br><b>Dist to Road:</b> 16.63 km<br><b>Dist to Town:</b> 82.66 km</div>`)[0];
+            popup_09fd44e14878b35b7422b9f97035b6e3.setContent(html_5cf12057d82b0072dc1c4963a6acd069);
+        
+
+        circle_marker_7920c4bf50a2b271f4d18923018c4a5f.bindPopup(popup_09fd44e14878b35b7422b9f97035b6e3)
+        ;
+
+        
+    
+</script>
+</html>
+    <hr>
+    <h4>Top 50 Recommended Sites</h4>
+    <table border="1" class="dataframe table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Longitude</th>
+      <th>Latitude</th>
+      <th>Suitability Score</th>
+      <th>Solar GHI</th>
+      <th>Dist to Road (km)</th>
+      <th>Dist to Town (km)</th>
+      <th>Nearest Place</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>26.78</td>
+      <td>-31.52</td>
+      <td>91.61</td>
+      <td>2187.60</td>
+      <td>19.46</td>
+      <td>42.72</td>
+      <td>Inkwanca Ward 3</td>
+    </tr>
+    <tr>
+      <td>26.99</td>
+      <td>-32.42</td>
+      <td>90.79</td>
+      <td>2165.27</td>
+      <td>3.82</td>
+      <td>59.26</td>
+      <td>Amahlathi Ward 4</td>
+    </tr>
+    <tr>
+      <td>26.99</td>
+      <td>-32.24</td>
+      <td>89.37</td>
+      <td>2146.41</td>
+      <td>6.99</td>
+      <td>39.83</td>
+      <td>Amahlathi Ward 4</td>
+    </tr>
+    <tr>
+      <td>27.20</td>
+      <td>-31.34</td>
+      <td>88.78</td>
+      <td>2166.41</td>
+      <td>9.58</td>
+      <td>69.41</td>
+      <td>Maletswai Ward 1</td>
+    </tr>
+    <tr>
+      <td>26.57</td>
+      <td>-31.16</td>
+      <td>88.53</td>
+      <td>2196.89</td>
+      <td>21.54</td>
+      <td>86.69</td>
+      <td>Gariep Ward 3</td>
+    </tr>
+    <tr>
+      <td>26.57</td>
+      <td>-32.24</td>
+      <td>88.45</td>
+      <td>2144.03</td>
+      <td>6.70</td>
+      <td>47.63</td>
+      <td>Lukhanji Ward 13</td>
+    </tr>
+    <tr>
+      <td>27.20</td>
+      <td>-31.88</td>
+      <td>87.62</td>
+      <td>2135.36</td>
+      <td>11.78</td>
+      <td>31.53</td>
+      <td>Tshatshu</td>
+    </tr>
+    <tr>
+      <td>27.41</td>
+      <td>-31.70</td>
+      <td>87.38</td>
+      <td>2139.68</td>
+      <td>5.76</td>
+      <td>55.92</td>
+      <td>KuNdonga</td>
+    </tr>
+    <tr>
+      <td>27.41</td>
+      <td>-31.34</td>
+      <td>85.14</td>
+      <td>2176.26</td>
+      <td>27.37</td>
+      <td>80.47</td>
+      <td>Senqu Ward 15</td>
+    </tr>
+    <tr>
+      <td>26.99</td>
+      <td>-31.88</td>
+      <td>83.63</td>
+      <td>2095.41</td>
+      <td>14.55</td>
+      <td>11.62</td>
+      <td>Lukhanji Ward 4</td>
+    </tr>
+    <tr>
+      <td>27.41</td>
+      <td>-31.88</td>
+      <td>83.32</td>
+      <td>2103.57</td>
+      <td>5.05</td>
+      <td>51.51</td>
+      <td>Intsika Yethu Ward 20</td>
+    </tr>
+    <tr>
+      <td>26.36</td>
+      <td>-30.98</td>
+      <td>82.31</td>
+      <td>2137.89</td>
+      <td>5.34</td>
+      <td>112.83</td>
+      <td>Gariep Ward 3</td>
+    </tr>
+    <tr>
+      <td>26.36</td>
+      <td>-30.80</td>
+      <td>81.78</td>
+      <td>2161.79</td>
+      <td>14.38</td>
+      <td>131.17</td>
+      <td>Gariep Ward 3</td>
+    </tr>
+    <tr>
+      <td>25.93</td>
+      <td>-31.88</td>
+      <td>81.59</td>
+      <td>2113.71</td>
+      <td>4.18</td>
+      <td>88.55</td>
+      <td>Tsolwana Ward 5</td>
+    </tr>
+    <tr>
+      <td>26.99</td>
+      <td>-31.34</td>
+      <td>80.80</td>
+      <td>2098.17</td>
+      <td>8.84</td>
+      <td>62.91</td>
+      <td>Maletswai Ward 1</td>
+    </tr>
+    <tr>
+      <td>26.78</td>
+      <td>-31.70</td>
+      <td>80.34</td>
+      <td>2072.67</td>
+      <td>11.67</td>
+      <td>23.46</td>
+      <td>Inkwanca Ward 3</td>
+    </tr>
+    <tr>
+      <td>26.57</td>
+      <td>-31.52</td>
+      <td>78.99</td>
+      <td>2125.99</td>
+      <td>37.88</td>
+      <td>50.66</td>
+      <td>Inkwanca Ward 2</td>
+    </tr>
+    <tr>
+      <td>26.15</td>
+      <td>-31.52</td>
+      <td>78.11</td>
+      <td>2080.41</td>
+      <td>3.94</td>
+      <td>80.30</td>
+      <td>Inkwanca Ward 2</td>
+    </tr>
+    <tr>
+      <td>26.15</td>
+      <td>-31.70</td>
+      <td>78.05</td>
+      <td>2089.93</td>
+      <td>12.98</td>
+      <td>71.93</td>
+      <td>Tsolwana Ward 5</td>
+    </tr>
+    <tr>
+      <td>26.78</td>
+      <td>-31.34</td>
+      <td>76.84</td>
+      <td>2098.70</td>
+      <td>27.25</td>
+      <td>62.44</td>
+      <td>Maletswai Ward 1</td>
+    </tr>
+    <tr>
+      <td>27.20</td>
+      <td>-31.16</td>
+      <td>76.59</td>
+      <td>2069.79</td>
+      <td>1.79</td>
+      <td>87.70</td>
+      <td>Senqu Ward 15</td>
+    </tr>
+    <tr>
+      <td>26.99</td>
+      <td>-30.08</td>
+      <td>75.24</td>
+      <td>2139.08</td>
+      <td>2.97</td>
+      <td>202.19</td>
+      <td>S748</td>
+    </tr>
+    <tr>
+      <td>26.14</td>
+      <td>-31.88</td>
+      <td>73.97</td>
+      <td>2071.29</td>
+      <td>22.02</td>
+      <td>68.55</td>
+      <td>Tsolwana Ward 4</td>
+    </tr>
+    <tr>
+      <td>25.50</td>
+      <td>-32.41</td>
+      <td>73.38</td>
+      <td>2085.38</td>
+      <td>4.38</td>
+      <td>141.07</td>
+      <td>Blue Crane Route Ward 4</td>
+    </tr>
+    <tr>
+      <td>25.94</td>
+      <td>-30.97</td>
+      <td>72.37</td>
+      <td>2136.77</td>
+      <td>41.02</td>
+      <td>134.95</td>
+      <td>Gariep Ward 1</td>
+    </tr>
+    <tr>
+      <td>26.78</td>
+      <td>-30.08</td>
+      <td>72.33</td>
+      <td>2136.73</td>
+      <td>14.87</td>
+      <td>202.04</td>
+      <td>Mohokare Ward 4</td>
+    </tr>
+    <tr>
+      <td>25.73</td>
+      <td>-31.51</td>
+      <td>72.00</td>
+      <td>2105.17</td>
+      <td>31.74</td>
+      <td>116.32</td>
+      <td>Tsolwana Ward 5</td>
+    </tr>
+    <tr>
+      <td>25.52</td>
+      <td>-31.51</td>
+      <td>71.59</td>
+      <td>2145.66</td>
+      <td>49.58</td>
+      <td>135.17</td>
+      <td>Inxuba Yethemba Ward 9</td>
+    </tr>
+    <tr>
+      <td>25.71</td>
+      <td>-32.42</td>
+      <td>71.56</td>
+      <td>2074.63</td>
+      <td>13.46</td>
+      <td>123.12</td>
+      <td>Inxuba Yethemba Ward 6</td>
+    </tr>
+    <tr>
+      <td>26.57</td>
+      <td>-31.34</td>
+      <td>71.39</td>
+      <td>2065.59</td>
+      <td>30.58</td>
+      <td>68.12</td>
+      <td>DR02640</td>
+    </tr>
+    <tr>
+      <td>25.74</td>
+      <td>-30.79</td>
+      <td>71.01</td>
+      <td>2191.88</td>
+      <td>67.90</td>
+      <td>163.18</td>
+      <td>Gariep Ward 1</td>
+    </tr>
+    <tr>
+      <td>26.14</td>
+      <td>-32.42</td>
+      <td>70.64</td>
+      <td>2083.47</td>
+      <td>35.74</td>
+      <td>89.87</td>
+      <td>Nxuba Ward 4</td>
+    </tr>
+    <tr>
+      <td>27.20</td>
+      <td>-30.80</td>
+      <td>70.42</td>
+      <td>2068.20</td>
+      <td>13.80</td>
+      <td>125.86</td>
+      <td>R58</td>
+    </tr>
+    <tr>
+      <td>26.57</td>
+      <td>-30.26</td>
+      <td>70.28</td>
+      <td>2123.75</td>
+      <td>23.67</td>
+      <td>184.08</td>
+      <td>N6</td>
+    </tr>
+    <tr>
+      <td>26.14</td>
+      <td>-32.06</td>
+      <td>69.65</td>
+      <td>2054.68</td>
+      <td>31.06</td>
+      <td>70.89</td>
+      <td>Tsolwana Ward 5</td>
+    </tr>
+    <tr>
+      <td>26.36</td>
+      <td>-31.16</td>
+      <td>69.37</td>
+      <td>2021.56</td>
+      <td>3.70</td>
+      <td>95.16</td>
+      <td>DR02644</td>
+    </tr>
+    <tr>
+      <td>26.78</td>
+      <td>-32.06</td>
+      <td>69.21</td>
+      <td>1969.67</td>
+      <td>3.92</td>
+      <td>20.04</td>
+      <td>Lukhanji Ward 18</td>
+    </tr>
+    <tr>
+      <td>26.99</td>
+      <td>-30.62</td>
+      <td>68.76</td>
+      <td>2094.55</td>
+      <td>30.09</td>
+      <td>142.32</td>
+      <td>Maletswai Ward 1</td>
+    </tr>
+    <tr>
+      <td>25.52</td>
+      <td>-30.97</td>
+      <td>68.73</td>
+      <td>2189.84</td>
+      <td>76.70</td>
+      <td>164.00</td>
+      <td>DR02689</td>
+    </tr>
+    <tr>
+      <td>25.93</td>
+      <td>-32.24</td>
+      <td>68.55</td>
+      <td>2048.18</td>
+      <td>22.26</td>
+      <td>96.39</td>
+      <td>Inxuba Yethemba Ward 6</td>
+    </tr>
+    <tr>
+      <td>26.78</td>
+      <td>-31.88</td>
+      <td>68.32</td>
+      <td>1954.89</td>
+      <td>3.87</td>
+      <td>8.73</td>
+      <td>Lukhanji Ward 27</td>
+    </tr>
+    <tr>
+      <td>26.78</td>
+      <td>-30.62</td>
+      <td>68.24</td>
+      <td>2059.47</td>
+      <td>12.25</td>
+      <td>142.12</td>
+      <td>Mohokare Ward 2</td>
+    </tr>
+    <tr>
+      <td>27.41</td>
+      <td>-30.26</td>
+      <td>67.91</td>
+      <td>2116.93</td>
+      <td>28.55</td>
+      <td>189.00</td>
+      <td>Ha Smith Phosholi</td>
+    </tr>
+    <tr>
+      <td>25.93</td>
+      <td>-32.42</td>
+      <td>66.43</td>
+      <td>2053.63</td>
+      <td>31.30</td>
+      <td>105.91</td>
+      <td>Nxuba Ward 4</td>
+    </tr>
+    <tr>
+      <td>26.36</td>
+      <td>-31.34</td>
+      <td>66.37</td>
+      <td>2002.52</td>
+      <td>12.74</td>
+      <td>78.62</td>
+      <td>Inkwanca Ward 2</td>
+    </tr>
+    <tr>
+      <td>26.57</td>
+      <td>-32.06</td>
+      <td>65.83</td>
+      <td>1970.82</td>
+      <td>14.49</td>
+      <td>33.81</td>
+      <td>Lukhanji Ward 14</td>
+    </tr>
+    <tr>
+      <td>26.78</td>
+      <td>-30.80</td>
+      <td>65.79</td>
+      <td>2042.38</td>
+      <td>21.30</td>
+      <td>122.16</td>
+      <td>Somerset Street</td>
+    </tr>
+    <tr>
+      <td>25.72</td>
+      <td>-32.23</td>
+      <td>65.55</td>
+      <td>2006.39</td>
+      <td>4.42</td>
+      <td>115.03</td>
+      <td>Inxuba Yethemba Ward 6</td>
+    </tr>
+    <tr>
+      <td>26.57</td>
+      <td>-31.88</td>
+      <td>65.26</td>
+      <td>1976.31</td>
+      <td>22.29</td>
+      <td>28.59</td>
+      <td>Tsolwana Ward 2</td>
+    </tr>
+    <tr>
+      <td>26.99</td>
+      <td>-31.16</td>
+      <td>65.20</td>
+      <td>2002.81</td>
+      <td>16.63</td>
+      <td>82.66</td>
+      <td>Maletswai Ward 1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>
